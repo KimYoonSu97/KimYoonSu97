@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-![reversal](https://capsule-render.vercel.app/api?type=rect&text=FrontEnd&fontAlign=30&fontSize=30&desc=KimYoonSu&descAlign=60&descAlignY=50&theme=radical)
+![reversal](https://capsule-render.vercel.app/api?type=rect_render&animation=fadeIn&text=KimYoonSu&fontAlign=30&fontSize=30&desc=FrontEnd&descAlign=50&descAlignY=50&theme=radical)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KimYoonSu97&show_icons=true&theme=radical)
 
