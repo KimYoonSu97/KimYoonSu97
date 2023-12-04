@@ -86,7 +86,7 @@
 
 <a href="https://github.com/KimYoonSu97">
 <img align="center" style="height:180px" src="https://github-readme-stats.vercel.app/api?username=KimYoonSu97&show_icons=true&include_all_commits=true&theme=nord&hide_border=true" alt="KimYoonSu97's github stats" />
-<img align="center" style="height:180px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KimYoonSu97&layout=compact&theme=nord&hide_border=true" alt="KimYoonSu97's lang stats"/>
+  <img align="center" style="height:180px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KimYoonSu97&layout=compact&theme=nord" alt="KimYoonSu97's lang stats"/>
 </a>
 
 </div>
