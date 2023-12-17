@@ -82,7 +82,7 @@
 <br />NEXT.js 와 NODE.js 강의를 별도로 구매하여 수강 중입니다.
 <br />더하여 데이터 처리를 더욱 효율적으로 하기위해 알고리즘 문제 풀이를 차근차근히 풀어나가고 있습니다.
 
-[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=zkzk625)](https://velog.io/@zkzk625)
+
 
 <a href="https://github.com/KimYoonSu97">
 <img align="center" style="height:180px" src="https://github-readme-stats.vercel.app/api?username=KimYoonSu97&show_icons=true&include_all_commits=true&theme=nord&hide_border=true" alt="KimYoonSu97's github stats" />
