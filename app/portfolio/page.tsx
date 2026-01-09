@@ -15,8 +15,8 @@ import Footer from "@/src/components/Footer";
 const page = () => {
   return (
     <div className="w-dvw h-dvh overflow-y-scroll snap-y snap-mandatory no-scrollbar">
-      <section className="w-full min-h-screen pt-30 pb-30">
-        <div className="flex  flex-col gap-4 pr-20 pl-20">
+      <section className="w-full min-h-screen pt-24 md:pt-30 pb-10 md:pb-30">
+        <div className="flex flex-col gap-4 px-4 md:px-10 lg:px-20">
           <Card
             title={"자동차 렌트/리스 종합 플랫폼 및 통합 어드민"}
             caption={
@@ -25,7 +25,7 @@ const page = () => {
             period={"2024.4 ~ 2025.9 (1년 5개월)"}
             team={"FE 1명(본인), BE 1명, Designer 1명"}
             role={"앱 개발 100%, 웹 개발 100%"}
-            image={<p>스타오토모빌</p>}
+            image={<p className="text-sm md:text-base">스타오토모빌</p>}
             page={<Cafit />}
           />
 
@@ -47,6 +47,7 @@ const page = () => {
                 alt="teamlite"
                 width={200}
                 height={200}
+                className="w-32 h-32 md:w-[200px] md:h-[200px]"
               />
             }
             link={"https://teamlite.dpdns.org/login"}

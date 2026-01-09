@@ -16,18 +16,18 @@ const Header = () => {
 
   return (
     <div className="fixed top-0 z-50 w-full backdrop-blur-md border-white/20">
-      <div className="flex justify-between items-center pr-7 pl-7 pt-5 pb-5">
+      <div className="flex justify-between items-center px-4 md:px-7 py-3 md:py-5">
         {/* Logo */}
-        <div className="cursor-pointer pr-3">
+        <div className="cursor-pointer">
           <Link href="/">
-            <p className="font-bold text-[24px] hover:text-slate-600 transition-colors">
+            <p className="font-bold text-lg md:text-[24px] hover:text-slate-600 transition-colors">
               Thomas
             </p>
           </Link>
         </div>
 
-        {/* Current Page */}
-        <div className="cursor-pointer pl-3 pr-3">
+        {/* Current Page - Hidden on mobile */}
+        <div className="hidden md:block cursor-pointer px-3">
           <p className="font-bold text-[40px]">{pathname.split("/")[1]}</p>
         </div>
 
@@ -35,13 +35,13 @@ const Header = () => {
         <div className="relative">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="cursor-pointer pl-3 flex items-center gap-2 hover:text-slate-600 transition-colors"
+            className="cursor-pointer flex items-center gap-2 hover:text-slate-600 transition-colors"
           >
-            <p className="font-bold text-[24px]">menu</p>
+            <p className="font-bold text-lg md:text-[24px]">menu</p>
             {isMenuOpen ? (
-              <X className="w-6 h-6" />
+              <X className="w-5 h-5 md:w-6 md:h-6" />
             ) : (
-              <Menu className="w-6 h-6" />
+              <Menu className="w-5 h-5 md:w-6 md:h-6" />
             )}
           </button>
 
@@ -61,7 +61,9 @@ const Header = () => {
                         : "font-medium"
                     }`}
                   >
-                    <p className="text-slate-900">{item.name}</p>
+                    <p className="text-slate-900 text-sm md:text-base">
+                      {item.name}
+                    </p>
                   </div>
                 </Link>
               ))}

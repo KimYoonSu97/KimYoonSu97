@@ -16,13 +16,17 @@ const ProfilePage = () => {
   return (
     <div className="min-h-screen h-dvh overflow-y-scroll no-scrollbar">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-7">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-20 px-4 md:px-7">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-[48px] font-bold mb-4">김윤수</h1>
-          <p className="text-[24px] text-slate-600 mb-8">Frontend Developer</p>
+          <h1 className="text-3xl md:text-[48px] font-bold mb-3 md:mb-4">
+            김윤수
+          </h1>
+          <p className="text-lg md:text-[24px] text-slate-600 mb-6 md:mb-8">
+            Frontend Developer
+          </p>
 
           {/* Contact Info */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-8 md:mb-12">
             <div className="flex items-center gap-3 text-slate-700">
               <Calendar className="w-5 h-5 text-slate-500" />
               <span className="text-sm">1997.01.27</span>
@@ -54,8 +58,8 @@ const ProfilePage = () => {
           </div>
 
           {/* Philosophy */}
-          <div className="bg-slate-50 border border-slate-200 p-8 mb-16">
-            <h2 className="text-[28px] font-bold mb-6 text-slate-900">
+          <div className="bg-slate-50 border border-slate-200 p-4 md:p-8 mb-10 md:mb-16">
+            <h2 className="text-xl md:text-[28px] font-bold mb-4 md:mb-6 text-slate-900">
               "가볍게 시작된 클릭이, 오래 머물고 싶은 경험이 되도록"
             </h2>
             <div className="space-y-4 text-slate-700 leading-relaxed">
@@ -64,8 +68,8 @@ const ProfilePage = () => {
                 엔지니어의 시선을 모두 갖추고 있습니다.
               </p>
 
-              <div className="mt-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="mt-4 md:mt-6">
+                <h3 className="text-base md:text-lg font-bold text-slate-900 mb-2 md:mb-3">
                   [실무: 깊이 있는 최적화와 아키텍처 경험]
                 </h3>
                 <p>
@@ -80,8 +84,8 @@ const ProfilePage = () => {
                 </p>
               </div>
 
-              <div className="mt-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">
+              <div className="mt-4 md:mt-6">
+                <h3 className="text-base md:text-lg font-bold text-slate-900 mb-2 md:mb-3">
                   [성장: 프론트엔드를 넘어선 엔지니어링 확장]
                 </h3>
                 <p>
@@ -95,7 +99,7 @@ const ProfilePage = () => {
                 </p>
               </div>
 
-              <p className="mt-6 text-slate-900 font-semibold">
+              <p className="mt-4 md:mt-6 text-slate-900 font-semibold text-sm md:text-base">
                 단순한 UI 구현을 넘어, 데이터의 흐름과 인프라 구조까지 이해하는
                 '넓은 시야'로 팀의 문제를 주도적으로 해결하는 개발자가
                 되겠습니다.
@@ -106,25 +110,25 @@ const ProfilePage = () => {
       </section>
 
       {/* Career Section */}
-      <section className="py-16 px-7 bg-white">
+      <section className="py-10 md:py-16 px-4 md:px-7 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-[36px] font-bold mb-12 border-l-4 border-slate-500 pl-4">
+          <h2 className="text-2xl md:text-[36px] font-bold mb-8 md:mb-12 border-l-4 border-slate-500 pl-3 md:pl-4">
             경력사항
           </h2>
 
           <div className="space-y-10">
             {/* Current Job */}
-            <div className="bg-white border border-slate-200 p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
-              <div className="flex items-start justify-between mb-4">
+            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4 gap-2">
                 <div>
-                  <h3 className="text-[24px] font-bold text-slate-900 mb-2">
+                  <h3 className="text-xl md:text-[24px] font-bold text-slate-900 mb-1 md:mb-2">
                     (주) 스타오토모빌
                   </h3>
                   <p className="text-slate-600 font-semibold">
                     Frontend Developer
                   </p>
                 </div>
-                <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1">
+                <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1 shrink-0">
                   2024.01 ~ 2025.09
                 </span>
               </div>
@@ -162,17 +166,17 @@ const ProfilePage = () => {
             </div>
 
             {/* Previous Job */}
-            <div className="bg-white border border-slate-200 p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
-              <div className="flex items-start justify-between mb-4">
+            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4 gap-2">
                 <div>
-                  <h3 className="text-[24px] font-bold text-slate-900 mb-2">
+                  <h3 className="text-xl md:text-[24px] font-bold text-slate-900 mb-1 md:mb-2">
                     (주) 케이아트앤컴
                   </h3>
                   <p className="text-slate-600 font-semibold">
                     브랜드 개발 및 운영
                   </p>
                 </div>
-                <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1">
+                <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1 shrink-0">
                   2021.09 ~ 2023.03
                 </span>
               </div>
@@ -200,9 +204,9 @@ const ProfilePage = () => {
       </section>
 
       {/* Education Section */}
-      <section className="py-16 px-7">
+      <section className="py-10 md:py-16 px-4 md:px-7">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-[36px] font-bold mb-12 border-l-4 border-slate-500 pl-4">
+          <h2 className="text-2xl md:text-[36px] font-bold mb-8 md:mb-12 border-l-4 border-slate-500 pl-3 md:pl-4">
             교육사항
           </h2>
 
@@ -213,9 +217,11 @@ const ProfilePage = () => {
                   <h3 className="text-[20px] font-bold text-slate-900 mb-2">
                     동양미래대학교
                   </h3>
-                  <p className="text-slate-600">시각정보디자인과 졸업</p>
+                  <p className="text-slate-600 text-sm md:text-base">
+                    시각정보디자인과 졸업
+                  </p>
                 </div>
-                <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1">
+                <span className="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 md:px-3 py-1 shrink-0">
                   2017.02 ~ 2022.02
                 </span>
               </div>
@@ -227,9 +233,11 @@ const ProfilePage = () => {
                   <h3 className="text-[20px] font-bold text-slate-900 mb-2">
                     스파르타코딩클럽 내일배움캠프
                   </h3>
-                  <p className="text-slate-600">React 과정 (6기) 수료</p>
+                  <p className="text-slate-600 font-semibold text-sm md:text-base">
+                    React 과정 (6기) 수료
+                  </p>
                 </div>
-                <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1">
+                <span className="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 md:px-3 py-1 shrink-0">
                   2023.05 ~ 2023.09
                 </span>
               </div>
@@ -239,16 +247,16 @@ const ProfilePage = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="py-16 px-7 bg-white">
+      <section className="py-10 md:py-16 px-4 md:px-7 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-[36px] font-bold mb-12 border-l-4 border-slate-500 pl-4">
+          <h2 className="text-2xl md:text-[36px] font-bold mb-8 md:mb-12 border-l-4 border-slate-500 pl-3 md:pl-4">
             실무 프로젝트
           </h2>
 
           <div className="space-y-10">
             {/* Project 1 */}
-            <div className="bg-white border border-slate-200 p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
-              <h3 className="text-[24px] font-bold text-slate-900 mb-4">
+            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
+              <h3 className="text-xl md:text-[24px] font-bold text-slate-900 mb-3 md:mb-4">
                 🚗 자동차 렌트/리스 종합 플랫폼 앱 개발
               </h3>
               <p className="text-sm text-slate-500 mb-4">2024.10 ~ 2025.9</p>
@@ -315,8 +323,8 @@ const ProfilePage = () => {
             </div>
 
             {/* Project 2 */}
-            <div className="bg-white border border-slate-200 p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
-              <h3 className="text-[24px] font-bold text-slate-900 mb-4">
+            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
+              <h3 className="text-xl md:text-[24px] font-bold text-slate-900 mb-3 md:mb-4">
                 💻 어드민 웹 기획 및 개발
               </h3>
               <p className="text-sm text-slate-500 mb-4">2024.04 ~ 2024.10</p>
@@ -377,8 +385,8 @@ const ProfilePage = () => {
             </div>
 
             {/* Project 3 - TeamLite */}
-            <div className="bg-white border border-slate-200 p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
-              <h3 className="text-[24px] font-bold text-slate-900 mb-4">
+            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
+              <h3 className="text-xl md:text-[24px] font-bold text-slate-900 mb-3 md:mb-4">
                 🚀 TeamLite: 협업 SaaS 프로젝트
               </h3>
               <p className="text-sm text-slate-500 mb-4">
@@ -454,14 +462,14 @@ const ProfilePage = () => {
       </section>
 
       {/* Strengths Section */}
-      <section className="py-16 px-7">
+      <section className="py-10 md:py-16 px-4 md:px-7">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-[36px] font-bold mb-12 border-l-4 border-slate-500 pl-4">
+          <h2 className="text-2xl md:text-[36px] font-bold mb-8 md:mb-12 border-l-4 border-slate-500 pl-3 md:pl-4">
             강점 및 특징
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white border border-slate-200 p-6 hover:shadow-md hover:border-blue-300 transition-all duration-300">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-blue-300 transition-all duration-300">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-blue-600" />
               </div>
@@ -473,7 +481,7 @@ const ProfilePage = () => {
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 p-6 hover:shadow-md hover:border-green-300 transition-all duration-300">
+            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-green-300 transition-all duration-300">
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
                 <Code2 className="w-6 h-6 text-green-600" />
               </div>
@@ -483,7 +491,7 @@ const ProfilePage = () => {
               <p className="text-sm text-slate-600">세심한 구현 경험</p>
             </div>
 
-            <div className="bg-white border border-slate-200 p-6 hover:shadow-md hover:border-purple-300 transition-all duration-300">
+            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-purple-300 transition-all duration-300">
               <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
                 <Briefcase className="w-6 h-6 text-purple-600" />
               </div>
@@ -495,7 +503,7 @@ const ProfilePage = () => {
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 p-6 hover:shadow-md hover:border-orange-300 transition-all duration-300">
+            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-orange-300 transition-all duration-300">
               <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
                 <GraduationCap className="w-6 h-6 text-orange-600" />
               </div>
@@ -511,14 +519,14 @@ const ProfilePage = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-16 px-7 bg-white">
+      <section className="py-10 md:py-16 px-4 md:px-7 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-[36px] font-bold mb-12 border-l-4 border-slate-500 pl-4">
+          <h2 className="text-2xl md:text-[36px] font-bold mb-8 md:mb-12 border-l-4 border-slate-500 pl-3 md:pl-4">
             협업툴 및 사용 기술
           </h2>
 
-          <div className="bg-slate-50 border border-slate-200 p-8">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="bg-slate-50 border border-slate-200 p-4 md:p-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <div>
                 <p className="text-xs text-slate-500 uppercase font-bold mb-3">
                   협업툴
