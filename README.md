@@ -78,7 +78,6 @@
 
 #### 새로운 지식에 관한 탐구와 그것을 뒷받혀줄 열정이라는 점입니다.
 
-
 ### To become a 🌳sapling developer🌳
 
 프론트엔드 개발자로 실무를 시작한 이후, 단순한 화면 구성에서 벗어나<br />
@@ -90,9 +89,10 @@ Next.js를 기반으로 서버 컴포넌트, form action, BFF 구조 등 다양�
 웹에서 쌓은 UI 설계 및 상태 관리 경험을 모바일 환경에도 확장해보았습니다.<br />
 앱과 웹이 공통 API를 사용하는 환경에서 클라이언트별 UI/UX 차이를 조율하며,<br />
 서비스 전반을 이해하는 프론트엔드 개발자로 한 단계 더 성장할 수 있었습니다.<br />
-#### 웹과 앱, 화면 너머의 구조까지 고민하는 개발자.
-더 큰 숲과 같은 개발자가 되기 위해 오늘도 성장 중입니다.<br />
 
+#### 웹과 앱, 화면 너머의 구조까지 고민하는 개발자.
+
+더 큰 숲과 같은 개발자가 되기 위해 오늘도 성장 중입니다.<br />
 
 <a href="https://github.com/KimYoonSu97">
 <img align="center" style="height:180px" src="https://github-readme-stats.vercel.app/api?username=KimYoonSu97&show_icons=true&include_all_commits=true&theme=nord&hide_border=true" alt="KimYoonSu97's github stats" />
