@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const ProfilePage = () => {
   return (
-    <div className="min-h-screen overflow-y-scroll no-scrollbar">
+    <div className="min-h-screen h-dvh overflow-y-scroll no-scrollbar">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-7">
         <div className="max-w-4xl mx-auto">
@@ -62,24 +62,43 @@ const ProfilePage = () => {
               <p>
                 서비스의 가치에 공감하는 사용자의 시선과, 이를 기술로 실현하는
                 엔지니어의 시선을 모두 갖추고 있습니다.
-                <br />
-                [실무: 깊이 있는 최적화와 아키텍처 경험] 1년 9개월간 렌트/리스
-                플랫폼과 어드민 웹의 리드 개발을 맡아 React/Next.js 기반의
-                서비스를 주도했습니다. 특히 유지보수성과 확장성에 집중하여 기존
-                코드를 MVVM 패턴과 도메인 주도 설계(DDD) 관점으로 리팩토링하고,
-                BFF(Backend For Frontend) 패턴을 도입해 클라이언트와 서버의
-                의존성을 획기적으로 낮췄습니다. 또한, 최근 토스 디자인
-                시스템(TDS)을 활용한 미니앱 개발을 통해 일관된 사용자 경험(UX)과
-                디자인 시스템의 중요성을 실무 레벨에서 체득했습니다. [성장:
-                프론트엔드를 넘어선 엔지니어링 확장] '프론트엔드의 한계는
-                없다'는 마인드로, 최근 사이드 프로젝트 **'TeamLite'**를 통해
-                풀스택 아키텍처를 직접 설계했습니다. Monorepo(Turborepo)
-                환경에서 Frontend(React)와 Backend(NestJS)를 통합 구축하고,
-                Docker와 AWS, GitHub Actions를 활용한 CI/CD 파이프라인까지 직접
-                구현하며 서비스의 전 과정을 리딩할 수 있는 역량을 확보했습니다.
+              </p>
+
+              <div className="mt-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-3">
+                  [실무: 깊이 있는 최적화와 아키텍처 경험]
+                </h3>
+                <p>
+                  1년 9개월간 렌트/리스 플랫폼과 어드민 웹의 리드 개발을 맡아
+                  React/Next.js 기반의 서비스를 주도했습니다. 특히 유지보수성과
+                  확장성에 집중하여 기존 코드를 MVVM 패턴과 도메인 주도
+                  설계(DDD) 관점으로 리팩토링하고, BFF(Backend For Frontend)
+                  패턴을 도입해 클라이언트와 서버의 의존성을 획기적으로
+                  낮췄습니다. 또한, 최근 토스 디자인 시스템(TDS)을 활용한 미니앱
+                  개발을 통해 일관된 사용자 경험(UX)과 디자인 시스템의 중요성을
+                  실무 레벨에서 체득했습니다.
+                </p>
+              </div>
+
+              <div className="mt-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-3">
+                  [성장: 프론트엔드를 넘어선 엔지니어링 확장]
+                </h3>
+                <p>
+                  '프론트엔드의 한계는 없다'는 마인드로, 최근 사이드 프로젝트{" "}
+                  <strong className="text-slate-900">'TeamLite'</strong>를 통해
+                  풀스택 아키텍처를 직접 설계했습니다. Monorepo(Turborepo)
+                  환경에서 Frontend(React)와 Backend(NestJS)를 통합 구축하고,
+                  Docker와 AWS, GitHub Actions를 활용한 CI/CD 파이프라인까지
+                  직접 구현하며 서비스의 전 과정을 리딩할 수 있는 역량을
+                  확보했습니다.
+                </p>
+              </div>
+
+              <p className="mt-6 text-slate-900 font-semibold">
                 단순한 UI 구현을 넘어, 데이터의 흐름과 인프라 구조까지 이해하는
                 '넓은 시야'로 팀의 문제를 주도적으로 해결하는 개발자가
-                되겠습니다."
+                되겠습니다.
               </p>
             </div>
           </div>

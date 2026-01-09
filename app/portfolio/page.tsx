@@ -15,8 +15,8 @@ import Footer from "@/src/components/Footer";
 const page = () => {
   return (
     <div className="w-dvw h-dvh overflow-y-scroll snap-y snap-mandatory no-scrollbar">
-      <section className="h-dvh w-full pt-30">
-        <div className="flex flex-col gap-4 pr-20 pl-20">
+      <section className="w-full min-h-screen pt-30 pb-30">
+        <div className="flex  flex-col gap-4 pr-20 pl-20">
           <Card
             title={"자동차 렌트/리스 종합 플랫폼 및 통합 어드민"}
             caption={
