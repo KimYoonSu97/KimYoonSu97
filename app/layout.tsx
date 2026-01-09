@@ -36,7 +36,7 @@ const pretendard = localFont({
 const sfMono = localFont({
   src: [
     {
-      path: "../public/fonts/SFMONO-Bold.otf",
+      path: "../public/fonts/SFMono-Bold.otf",
       weight: "700",
       style: "normal",
     },
