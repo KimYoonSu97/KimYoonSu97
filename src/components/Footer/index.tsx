@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const index = () => {
@@ -7,15 +8,31 @@ const index = () => {
         <div>
           <p className={"mb-2 text-[24px] bold"}>menu</p>
           <div className={"text-[16px] font-light"}>
-            <p>portfolio</p>
-            <p>profile</p>
+            <Link className="cursor-pointer" href="/portfolio">
+              <p>portfolio</p>
+            </Link>
+            <Link className="cursor-pointer" href="/profile">
+              <p>profile</p>
+            </Link>
           </div>
         </div>
         <div>
           <p className={"mb-2 text-[24px] bold"}>link</p>
           <div className={"text-[16px] font-light"}>
-            <p>github</p>
-            <p>velog</p>
+            <Link
+              className="cursor-pointer"
+              href="https://github.com/kimyoonsu97"
+              target="_blank"
+            >
+              <p>github</p>
+            </Link>
+            <Link
+              className="cursor-pointer"
+              href="https://velog.io/@zkzk625/posts"
+              target="_blank"
+            >
+              <p>velog</p>
+            </Link>
           </div>
         </div>
         <div>

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const index = () => {
   const pathname = usePathname();
@@ -8,7 +9,9 @@ const index = () => {
     <div className="fixed top-0 z-50 w-full backdrop-blur-md  border-white/20">
       <div className="flex justify-between pr-7 pl-7 pt-5 pb-5">
         <div className="cursor-pointer pr-3">
-          <p className="font-bold text-[24px]">Thomas</p>
+          <Link href="/">
+            <p className="font-bold text-[24px]">Thomas</p>
+          </Link>
         </div>
         <div className="cursor-pointer pl-3 pr-3">
           <p className="font-bold text-[40px]">{pathname.split("/")[1]}</p>

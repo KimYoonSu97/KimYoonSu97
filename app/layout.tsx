@@ -63,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`${sfMono.className} ${pretendard.className} font-sans bg-[#EFEEEA]`}
+        className={`whitespace-pre-wrap ${sfMono.className} ${pretendard.className} font-sans bg-[#EFEEEA]`}
       >
         <Header />
 
