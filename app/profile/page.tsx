@@ -132,70 +132,122 @@ const ProfilePage = () => {
                   2024.01 ~ 2025.09
                 </span>
               </div>
-
               <p className="text-slate-700 mb-4 font-medium">
                 차량 렌트리스 관련 앱 개발 및 어드민 웹 개발 (프론트엔드)
               </p>
 
               <ul className="space-y-2 text-sm text-slate-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-slate-400 mt-1">•</span>
-                  <span>
-                    React Native 기반 모바일 앱의 구조 개선 및 신규 기능 개발
-                  </span>
+                <li className="flex items-start gap-2 flex-col">
+                  <div className="text-slate-900">
+                    <span className="mt-1">• </span>
+                    <span className="font-semibold">
+                      React Native 기반 모바일 앱의 구조 개선 및 신규 기능 개발
+                    </span>
+                  </div>
+                  <div className="ml-4">
+                    <span className="font-medium">
+                      - View컴포넌트 내 코드 라인 수(LOC){" "}
+                      <span className="font-semibold text-slate-900 italic">
+                        평균 40% 감소
+                      </span>
+                    </span>
+                  </div>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-slate-400 mt-1">•</span>
-                  <span>
-                    차량 리뷰 및 커뮤니티 등 신규 기능 개발 및 상태 관리 최적화
-                  </span>
+                <li className="flex items-start gap-2 flex-col">
+                  <div>
+                    <span className="mt-1">• </span>
+                    <span className="font-semibold">
+                      데이터 관리 고도화 및 상태 관리 최적화
+                    </span>
+                  </div>
+                  <div className="ml-4">
+                    <span className="font-medium">
+                      - Props Drilling{" "}
+                      <span className="font-semibold text-slate-900 italic">
+                        6단계 → 1단계 단축
+                      </span>
+                      으로 데이터 흐름 단순화
+                    </span>
+                    <span className="font-medium">
+                      - Redux 전역 스토어{" "}
+                      <span className="font-semibold text-slate-900 italic">
+                        상태 관리 비용 약 70%
+                      </span>{" "}
+                      절감
+                    </span>
+                  </div>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-slate-400 mt-1">•</span>
-                  <span>
-                    Next.js 기반 어드민 웹 기획 및 개발 전담 (기획서 작성 포함)
-                  </span>
+                <li className="flex items-start gap-2 flex-col">
+                  <div>
+                    <span className="mt-1">• </span>
+                    <span className="font-semibold">
+                      차량 리뷰 및 커뮤니티 등 신규 기능 개발
+                    </span>
+                  </div>
+                  <div className="ml-4">
+                    <span className="font-medium">
+                      -{" "}
+                      <span className="font-semibold text-slate-900 italic">
+                        60fps의 네이티브급 애니메이션
+                      </span>{" "}
+                      구현
+                    </span>
+                    <span className="font-medium">
+                      -{" "}
+                      <span className="font-semibold text-slate-900 italic">
+                        WebView-Native Bridge 최적화를 통한 지도 서비스 구축
+                      </span>
+                    </span>
+                  </div>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-slate-400 mt-1">•</span>
-                  <span>
-                    사용자 피드백 기반의 UI/UX 개선 및 기능 최적화 반복 수행
-                  </span>
+                <li className="flex items-start gap-2 flex-col">
+                  <div>
+                    <span className="mt-1">• </span>
+                    <span className="font-semibold">
+                      기능 명세서 작성 및 사용자 인터뷰 기반 기획 참여
+                    </span>
+                  </div>
                 </li>
-              </ul>
-            </div>
-
-            {/* Previous Job */}
-            <div className="bg-white border border-slate-200 p-4 md:p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 md:mb-4 gap-2">
-                <div>
-                  <h3 className="text-xl md:text-[24px] font-bold text-slate-900 mb-1 md:mb-2">
-                    (주) 케이아트앤컴
-                  </h3>
-                  <p className="text-slate-600 font-semibold">
-                    브랜드 개발 및 운영
-                  </p>
-                </div>
-                <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1 shrink-0">
-                  2021.09 ~ 2023.03
-                </span>
-              </div>
-
-              <p className="text-slate-700 mb-4 font-medium">
-                브랜드 개발 및 디자인, 제품 개발, 마케팅, 고객관리
-              </p>
-
-              <ul className="space-y-2 text-sm text-slate-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-slate-400 mt-1">•</span>
-                  <span>
-                    1인 운영으로 브랜드 런칭과 제품 개선, 고객 대응 등 전반적인
-                    실무 수행
-                  </span>
+                <li className="flex items-start gap-2 flex-col">
+                  <div>
+                    <span className="mt-1">• </span>
+                    <span className="font-semibold">
+                      Next.js 기반 어드민 웹 기획 및 개발 전담 (기획서 작성
+                      포함)
+                    </span>
+                  </div>
+                  <div className="ml-4">
+                    <span className="font-medium">
+                      - 모바일 API 재사용
+                      <span className="font-semibold text-slate-900 italic">
+                        (BFF패턴)
+                      </span>
+                      → 백엔드 개발 리소스 절약
+                    </span>
+                    <span className="font-medium">
+                      - 서버사이드 데이터 가공 →{" "}
+                      <span className="font-semibold text-slate-900 italic">
+                        {" "}
+                        클라이언트 번들 사이즈 최적화
+                      </span>
+                    </span>
+                  </div>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-slate-400 mt-1">•</span>
-                  <span>고객 피드백 기반의 제품 개선과 브랜딩 전략 수립</span>
+                <li className="flex items-start gap-2 flex-col">
+                  <div>
+                    <span className="mt-1">• </span>
+                    <span className="font-semibold">
+                      사용자 피드백 기반의 UI/UX 개선 및 기능 최적화 반복 수행
+                    </span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-2 flex-col">
+                  <div>
+                    <span className="mt-1">• </span>
+                    <span className="font-semibold">
+                      서버 컴포넌트 기반 데이터 패칭 및 UI 처리 로직 분리
+                    </span>
+                  </div>
                 </li>
               </ul>
             </div>

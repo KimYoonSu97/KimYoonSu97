@@ -1,63 +1,116 @@
 "use client";
 
-import ProjectDetailLayout, {
-  Section,
-  ChallengeCard,
-} from "@/src/components/ProjectDetailLayout";
-import React, { useState } from "react";
-import Image from "next/image";
-import teamliteLogo from "@/public/image/teamlite-logo.png";
-import Card from "@/src/components/portfolio/Card";
-import Cafit from "@/src/components/portfolio/Cafit";
-import TeamLite from "@/src/components/portfolio/TeamLite";
-import Footer from "@/src/components/Footer";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 
-const page = () => {
+// 프로젝트 데이터 정의
+const PROJECTS = [
+  {
+    id: "01",
+    category: "APP REFACTORING",
+    title: "Architecture & DDD", // 리팩토링 프로젝트
+    description: "역할별 코드 레이어에서 도메인 주도 설계로의 진화",
+    tags: ["React Native", "Clean Architecture"],
+    href: "/portfolio/tadang/app", // 상세페이지 경로 1
+  },
+  {
+    id: "02",
+    category: "APP FEATURE",
+    title: "Interaction & Logic", // 신규 기능 프로젝트
+    description: "60fps 제스처 UI와 하이브리드 지도 시스템",
+    tags: ["Reanimated", "WebView Bridge"],
+    href: "/portfolio/tadang/app-new", // 상세페이지 경로 2
+  },
+  {
+    id: "03",
+    category: "WEB ADMIN",
+    title: "Admin & Workflow", // 어드민/BFF 프로젝트
+    description: "현업 워크플로우 최적화 및 BFF 도입",
+    tags: ["Next.js", "Server Action"],
+    href: "/portfolio/tadang/admin", // 상세페이지 경로 3
+  },
+  {
+    id: "04",
+    category: "PERSONAL PROJECT",
+    title: "TeamLite Service", // 개인 프로젝트
+    description: "팀 일정 및 협업 관리 SaaS",
+    tags: ["Nest.js", "Monorepo"],
+    href: "/portfolio/teamlite", // 상세페이지 경로 4
+  },
+];
+
+export default function ProjectNavigation() {
   return (
-    <div className="w-dvw h-dvh overflow-y-scroll snap-y snap-mandatory no-scrollbar">
-      <section className="w-full min-h-screen pt-24 md:pt-30 pb-10 md:pb-30">
-        <div className="flex flex-col gap-4 px-4 md:px-10 lg:px-20">
-          <Card
-            title={"자동차 렌트/리스 종합 플랫폼 및 통합 어드민"}
-            caption={
-              "서비스 고도화 및 운영 효율화를 위한 앱 리팩토링 & 웹 구축"
-            }
-            period={"2024.4 ~ 2025.9 (1년 5개월)"}
-            team={"FE 1명(본인), BE 1명, Designer 1명"}
-            role={"앱 개발 100%, 웹 개발 100%"}
-            image={<p className="text-sm md:text-base">스타오토모빌</p>}
-            page={<Cafit />}
-          />
+    <section className="w-full   px-6">
+      <div className="max-w-5xl mx-auto">
+        {/* Section Header (Optional) */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-12 flex items-end justify-between border-b border-black pb-4"
+        >
+          <h2 className="text-sm font-bold tracking-widest text-gray-500">
+            SELECTED WORKS
+          </h2>
+          <span className="text-sm font-medium text-black">2024 — 2026</span>
+        </motion.div>
 
-          <div className="w-full h-px bg-gray-400" />
+        {/* Project List */}
+        <div className="flex flex-col">
+          {PROJECTS.map((project, index) => (
+            <Link key={project.id} href={project.href} className="group block">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative py-12 border-b border-gray-200 transition-colors duration-500 hover:bg-gray-50 px-4 -mx-4 rounded-xl"
+              >
+                <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 md:gap-10">
+                  {/* 01. Number & Category */}
+                  <div className="w-full md:w-1/4 flex items-baseline gap-4">
+                    <span className="text-sm font-mono text-gray-400 group-hover:text-pink-600 transition-colors">
+                      {project.id}
+                    </span>
+                    <span className="text-xs font-bold tracking-widest text-gray-900 uppercase">
+                      {project.category}
+                    </span>
+                  </div>
 
-          <Card
-            title={"TeamLite : 사이드 프로젝트 팀을 위한 협업 SaaS"}
-            caption={
-              "Frontend부터 DevOps까지, 모노레포로 구축한 올인원 협업 도구"
-            }
-            period={"기간: 2025.12 ~ (진행 중)"}
-            team={"1인 개발 (Full Stack)"}
-            role={
-              "목표: 사이드 프로젝트 팀의 일정/할일 관리 및 커뮤니케이션 효율화, 풀스택 아키텍처 학습"
-            }
-            image={
-              <Image
-                src={teamliteLogo}
-                alt="teamlite"
-                width={200}
-                height={200}
-                className="w-32 h-32 md:w-[200px] md:h-[200px]"
-              />
-            }
-            link={"https://teamlite.dpdns.org/login"}
-            page={<TeamLite />}
-          />
+                  {/* 02. Big Title */}
+                  <div className="w-full md:w-2/4">
+                    <h3 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tighter group-hover:translate-x-2 transition-transform duration-300 ease-out">
+                      {project.title}
+                    </h3>
+                    <p className="mt-2 text-gray-500 text-sm md:text-base opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                      {project.description}
+                    </p>
+                  </div>
+
+                  {/* 03. Icon & Tags (Desktop only) */}
+                  <div className="hidden md:flex w-1/4 justify-end items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-right">
+                      {project.tags.map((tag) => (
+                        <div
+                          key={tag}
+                          className="text-xs text-gray-400 font-medium mb-1"
+                        >
+                          {tag}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center bg-white group-hover:bg-black group-hover:border-black transition-colors">
+                      <ArrowUpRight className="w-5 h-5 text-black group-hover:text-white" />
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
+          ))}
         </div>
-      </section>
-      <Footer />
-    </div>
+      </div>
+    </section>
   );
-};
-// 자동차 렌트/리스 종합 플랫폼 및 통합 어드민
-export default page;
+}
