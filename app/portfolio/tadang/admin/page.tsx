@@ -9,12 +9,7 @@ const PROJECT_INFO = {
   title: "운영 관리 플랫폼 고도화: 기획부터 BFF 아키텍처까지",
   period: "2025.02 - 2025.04",
   role: "Frontend Developer",
-  tags: [
-    "Next.js App Router",
-    "BFF Architecture",
-    "Server Actions",
-    "UX Research",
-  ],
+  tags: ["Next.js", "BFF Architecture", "Styled-components", "UX Research"],
   summary:
     "현업 실무자의 목소리를 듣는 것부터 시작했습니다. 불필요한 업무 동선을 40% 단축시키는 UX 개선과 함께, Next.js의 기능을 100% 활용한 BFF(Backend For Frontend) 구조 및 Server Action 도입으로 개발 효율과 시스템 안정성을 동시에 잡았습니다.",
 };
