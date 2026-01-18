@@ -4,6 +4,8 @@ import DetailPage from "@/src/components/detail/DetailPage";
 import MockupApp from "@/src/components/detail/mockupApp";
 import { Smartphone, FileCheck, Map } from "lucide-react";
 import React from "react";
+import app2 from "@/public/image/app2.png";
+import Image from "next/image";
 const PROJECT_INFO = {
   title: "차량 렌트/리스 플랫폼: 핵심 신규 기능 개발",
   period: "2024.11 - 2025.01",
@@ -78,7 +80,15 @@ const page = () => {
       <DetailPage
         PROJECT_INFO={PROJECT_INFO}
         SECTIONS={SECTIONS}
-        mockup={<MockupApp image={<div>목업</div>} />}
+        mockup={
+          <MockupApp
+            image={
+              <div className="w-full h-full">
+                <Image src={app2} alt="app2" />
+              </div>
+            }
+          />
+        }
       />
     </div>
   );

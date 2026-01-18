@@ -2,12 +2,15 @@
 
 import DetailPage from "@/src/components/detail/DetailPage";
 import MockupWeb from "@/src/components/detail/MockupWeb";
-import { ClipboardList, Laptop2, ServerCog } from "lucide-react";
+import { ClipboardList, GitGraph, Laptop2, ServerCog } from "lucide-react";
+import Image from "next/image";
 import React from "react";
+import admin1 from "@/public/image/admin1.png";
+import admin2 from "@/public/image/admin2.png";
 
 const PROJECT_INFO = {
   title: "운영 관리 플랫폼 고도화: 기획부터 BFF 아키텍처까지",
-  period: "2025.02 - 2025.04",
+  period: "2024.04 - 2024.11",
   role: "Frontend Developer",
   tags: ["Next.js", "BFF Architecture", "Styled-components", "UX Research"],
   summary:
@@ -15,6 +18,23 @@ const PROJECT_INFO = {
 };
 
 const SECTIONS = [
+  {
+    id: "cicd-pipeline",
+    icon: <GitGraph className="w-6 h-6 text-pink-600" />,
+    title: "Automated CI/CD: 배포의 자동화 및 안정성 확보",
+    subtitle: "GitHub Actions + AWS CodeDeploy + PM2 기반 파이프라인",
+    description:
+      "수동 배포로 인한 휴먼 에러를 원천 차단하기 위해 원클릭 자동화 파이프라인을 구축했습니다. 코드 푸시부터 서버 반영까지의 전 과정을 자동화하여 개발자는 로직 구현에만 집중할 수 있는 환경을 조성했습니다.",
+    metrics: [
+      { label: "배포 소요 시간", value: "70% 단축" },
+      { label: "배포 실패율", value: "0% 달성" },
+    ],
+    details: [
+      "GitHub Actions 워크플로우 최적화: 의존성 설치 → 빌드 → 아티팩트 압축 자동화",
+      "S3 & CodeDeploy 연동: 빌드 결과물을 S3에 버전별로 아카이빙하고, CodeDeploy가 EC2로 안전하게 배포하는 2단계 아키텍처 설계",
+      "PM2 프로세스 매니징: appspec.yml 훅(Hooks)과 쉘 스크립트를 통해 무중단 서비스 운영 및 로그 모니터링 환경 구축",
+    ],
+  },
   {
     id: "workflow",
     icon: <ClipboardList className="w-6 h-6 text-pink-600" />,
@@ -74,7 +94,14 @@ const page = () => {
       <DetailPage
         PROJECT_INFO={PROJECT_INFO}
         SECTIONS={SECTIONS}
-        mockup={<MockupWeb image={[<div>목업1</div>, <div>목업2</div>]} />}
+        mockup={
+          <MockupWeb
+            image={[
+              <Image src={admin1} alt={"어드민1"}></Image>,
+              <Image src={admin2} alt={"어드민2"}></Image>,
+            ]}
+          />
+        }
       />
     </div>
   );

@@ -30,14 +30,14 @@ const PROJECTS = [
     tags: ["Next.js", "Server Action"],
     href: "/portfolio/tadang/admin", // 상세페이지 경로 3
   },
-  {
-    id: "04",
-    category: "PERSONAL PROJECT",
-    title: "TeamLite Service", // 개인 프로젝트
-    description: "팀 일정 및 협업 관리 SaaS",
-    tags: ["Nest.js", "Monorepo"],
-    href: "/portfolio/teamlite", // 상세페이지 경로 4
-  },
+  // {
+  //   id: "04",
+  //   category: "PERSONAL PROJECT",
+  //   title: "TeamLite Service", // 개인 프로젝트
+  //   description: "팀 일정 및 협업 관리 SaaS",
+  //   tags: ["Nest.js", "Monorepo"],
+  //   href: "/portfolio/teamlite", // 상세페이지 경로 4
+  // },
 ];
 
 export default function ProjectNavigation() {

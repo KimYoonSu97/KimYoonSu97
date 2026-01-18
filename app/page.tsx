@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="h-dvh overflow-y-scroll snap-y snap-mandatory no-scrollbar">
       <section className="h-dvh w-full snap-start flex items-center justify-center">
-        <div className="flex flex-col justify-between w-full p-4 md:p-7 h-dvh">
+        {/* <div className="flex flex-col justify-between w-full p-4 md:p-7 h-dvh">
           <div></div>
           <p className="whitespace-pre-wrap text-center font-bold text-[60px] md:text-[120px] lg:text-[160px] leading-[60px] md:leading-[120px] lg:leading-[160px]">
             {"THE ART\nOF\nEXECUTING\nIDEAS"}
@@ -17,6 +17,16 @@ export default function Home() {
           <p className="text-base md:text-[24px] ml-auto">
             아이디어를 실행하는 기술
           </p>
+        </div> */}
+        <div className="w-full h-dvh overflow-hidden">
+          <iframe
+            src="https://my.spline.design/distortingtypography-Ij9A4LOcQsGmyVmssuRo3c8X/"
+            frameBorder="0"
+            width="100%"
+            height="100%"
+            className="w-full h-[calc(100dvh+100px)]"
+            title="Spline 3D Hero"
+          ></iframe>
         </div>
       </section>
 

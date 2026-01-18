@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import DetailPage from "@/src/components/detail/DetailPage";
 import MockupApp from "@/src/components/detail/mockupApp";
+import app1 from "@/public/image/app1.png";
 
 // --- 데이터 세팅 (사용자가 주신 내용을 구조화) ---
 const PROJECT_INFO = {
@@ -95,7 +96,7 @@ export default function PortfolioStoryPage() {
       <DetailPage
         PROJECT_INFO={PROJECT_INFO}
         SECTIONS={SECTIONS}
-        mockup={<MockupApp image={<div>목업</div>} />}
+        mockup={<MockupApp image={<Image src={app1} alt="app1"></Image>} />}
       />
     </div>
   );
